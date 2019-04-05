@@ -1,44 +1,42 @@
-//Back preventDefault
+//BACKEND
+
 function robot(userInput) {
   var numberUserInput = parseInt(userInput);
-  console.log(numberUserInput);
-
 
   var rangeArray = [];
 
   for (var i = 0; i <= numberUserInput; i++) {
-    if (String(i).includes("1")){
+
+//Condition for 3's
+    if (String(i).includes("3")){
+    rangeArray.push("I'm sorry, Dave. I'm afraid I can't do that.");
+
+//Condition for 2's
+    } else if (String(i).includes("2")){
       rangeArray.push("BOOP");
+
+//Condition for 2's
+    } else if (String(i).includes("1")){
+      rangeArray.push("BEEP");
+
+//Condition for numbers w/o 1,2 or 3
     } else {
       rangeArray.push(i);
     }
   }
   return rangeArray
-  console.log(rangeArray.includes(1));
-
 }
 
 
-
-
-
-  // for(var i = 0; i <= rangeArray.length; i++) {
-  //   if (beep.includes(rangeArray[i]) === true) {
-  //     rangeArray[i].replace("BEEP");
-  //     console.log(rangeArray);
-  //   }
-  // }
-  // return rangeArray
-// }
-
-
-//Front End
+//FRONTEND
 $(function(){
   $("form").submit(function(event) {
-    event.preventDefault();
     var userInput = $("#inputNumber").val();
+
     var output = robot(userInput);
     $("#answer").show();
+
     $("#outputToUser").text(output);
+    event.preventDefault();
   });
 });
