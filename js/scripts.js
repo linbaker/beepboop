@@ -1,18 +1,18 @@
-// Back End
+//Back preventDefault
 function robot(userInput) {
+
 
 
 }
 
 
-
-//User Front End
+//Front End
 $(function(){
   $("form").submit(function(event) {
+    event.preventDefault();
     var userInput = $("#inputNumber").val();
-    var output = robot(userInput);
+    var output = roman(userInput);
     $("#answer").show();
     $("#outputToUser").text(output);
-    event.preventDefault();
   });
 });
