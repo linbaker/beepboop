@@ -1,5 +1,7 @@
 # _Beep Boop_
 
+https://github.com/linbaker/beepboop.git
+
 #### _Array and Looping Exercise for Epicodus, 04.05.2019
 
 #### By _**Lindsey Baker**_
