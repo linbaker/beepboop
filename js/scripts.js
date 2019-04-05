@@ -2,12 +2,17 @@
 
 function robot(userInput, userName) {
   var numberUserInput = parseInt(userInput);
-  alert(userName);
 
   var rangeArray = [];
-if (userName === "") {
-  userName = "Dave";
-}
+
+  if (userName === "") {
+    userName = "Dave";
+  }
+
+  if (userInput === "") {
+    return "You can't fool me, human, enter a number";
+  }
+
   for (var i = 0; i <= numberUserInput; i++) {
 
 //Condition for 3's
