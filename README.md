@@ -17,7 +17,7 @@ _This application will take a number input from the user and return a range of n
 
 |Behavior|Input|Output|
 |-|-|-|
-|User attempts to enter letters/special cahrachters unable to type non-numeric characters|N/A|N/A|
+|User attempts to enter letters/special chrachters unable to type non-numeric characters|N/A|N/A|
 |Negative number input|-5|Enter a number larger than 0|
 |Non-integer input|3.1415, e|Enter a whole number, the closest are 3 and 4, 2 and 3|
 |Single digit number 0 input|0|0|
