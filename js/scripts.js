@@ -5,12 +5,15 @@ function robot(userInput, userName) {
 
   var rangeArray = [];
 
-  if (userName === "") {
-    userName = "Dave";
+//If number input is left blank
+  if (userInput === "") {
+    return "You can't fool me, human, enter a number!";
   }
 
-  if (userInput === "") {
-    return "You can't fool me, human, enter a number";
+
+//If name input is left blank
+  if (userName === "") {
+    userName = "Dave";
   }
 
   for (var i = 0; i <= numberUserInput; i++) {

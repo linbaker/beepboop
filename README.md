@@ -19,15 +19,15 @@ _This application will take a number input from the user and return a range of n
 
 |Behavior|Input|Output|
 |-|-|-|
-|User attempts to enter letters/special chrachters unable to type non-numeric characters|N/A|N/A|
+|User attempts to enter letters/special characters unable to type non-numeric characters|N/A|N/A|
 |Negative number input|-5|Enter a number larger than 0|
 |Non-integer input|3.1415, e|Enter a whole number, the closest are 3 and 4, 2 and 3|
-|Single digit number 0 input|0|0|
 |Program returns a range of numbers from 0 to user input|3|0, 1, 2, 3|
 |Program replaces any number '1' in returned range with 'BEEP'|4|0, BEEP, 2, 3, 4|
-|Program replaces any number '2' in returned range with 'BOOP'|3|0,BEEP, BOOP, 3|
+|Program replaces any number '2' in returned range with 'BOOP'|3|0, BEEP, BOOP, 3|
 |Program replaces any single digit number '3' in returned range with 'I'm sorry, Dave. I'm afraid I can't do that.'|5|0, BEEP, BOOP, I'm sorry, Dave. I'm afraid I can't do that., 4, 5|
-
+|When user inputs name, program replaces 'Dave' in return with user's name input| 3, Lindsey|0, BEEP, BOOP, I'm sorry, Lindsey. I'm afraid I can't do that.|
+|Program returns string when number input form is left blank| |"You can't fool me, human, enter a number!"|
 
 ## Known Bugs
 
