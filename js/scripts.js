@@ -1,15 +1,15 @@
 //BACKEND
 
-function robot(userInput) {
+function robot(userInput, userName) {
   var numberUserInput = parseInt(userInput);
-
+  alert(userName);
   var rangeArray = [];
 
   for (var i = 0; i <= numberUserInput; i++) {
 
 //Condition for 3's
     if (String(i).includes("3")){
-    rangeArray.push(" I'm sorry, Dave. I'm afraid I can't do that.");
+    rangeArray.push(" I'm sorry, " + userName + ". I'm afraid I can't do that.");
 
 //Condition for 2's
     } else if (String(i).includes("2")){
@@ -33,7 +33,9 @@ $(function(){
   $("form").submit(function(event) {
     var userInput = $("#inputNumber").val();
 
-    var output = robot(userInput);
+    var userName = $("#inputName").val();
+
+    var output = robot(userInput, userName);
     $("#answer").show();
 
     $("#outputToUser").text(output);
