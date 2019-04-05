@@ -17,6 +17,10 @@ form {
   margin: 35px;
 }
 
+button {
+  margin-top: 15px;
+}
+
 #answer {
   display: none;
 }

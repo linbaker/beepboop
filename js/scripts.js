@@ -3,8 +3,11 @@
 function robot(userInput, userName) {
   var numberUserInput = parseInt(userInput);
   alert(userName);
-  var rangeArray = [];
 
+  var rangeArray = [];
+if (userName === "") {
+  userName = "Dave";
+}
   for (var i = 0; i <= numberUserInput; i++) {
 
 //Condition for 3's
@@ -23,6 +26,10 @@ function robot(userInput, userName) {
     } else {
       rangeArray.push(" " + i);
     }
+  }
+
+  if (rangeArray.length === 0) {
+    return
   }
   return rangeArray
 }
