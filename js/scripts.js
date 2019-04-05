@@ -13,7 +13,7 @@ function robot(userInput) {
       rangeArray.push(i);
     }
   }
-  console.log(rangeArray);
+  return rangeArray
   console.log(rangeArray.includes(1));
 
 }
