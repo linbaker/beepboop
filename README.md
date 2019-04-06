@@ -28,6 +28,7 @@ _This application will take a number input from the user and return a range of n
 |Program replaces any single digit number '3' in returned range with 'I'm sorry, Dave. I'm afraid I can't do that.'|5|0, BEEP, BOOP, I'm sorry, Dave. I'm afraid I can't do that., 4, 5|
 |When user inputs name, program replaces 'Dave' in return with user's name input| 3, Lindsey|0, BEEP, BOOP, I'm sorry, Lindsey. I'm afraid I can't do that.|
 |Program returns string when number input form is left blank| |"You can't fool me, human, enter a number!"|
+|Program stops return at 50 and asks user to click second submit, at click returns full range|55|"Do you really want all these numbers?"|
 
 ## Known Bugs
 
