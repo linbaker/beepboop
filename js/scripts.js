@@ -1,5 +1,7 @@
 //BACKEND
 
+
+//function for range up to 50
 function robot(userInput, userName) {
   var numberUserInput = parseInt(userInput);
 
@@ -40,34 +42,6 @@ if (numberUserInput > 50) {
     $(overFiftyOutput).hide;
     for (var i = 0; i <= numberUserInput; i++) {
 
-    //Condition for 3's
-        if (String(i).includes("3")){
-        rangeArray.push(" I'm sorry, " + userName + ". I'm afraid I can't do that.");
-
-    //Condition for 2's
-        } else if (String(i).includes("2")){
-          rangeArray.push(" BOOP");
-
-    //Condition for 2's
-        } else if (String(i).includes("1")){
-          rangeArray.push(" BEEP");
-
-    //Condition for numbers w/o 1,2 or 3
-        } else {
-          rangeArray.push(" " + i);
-        }
-      }
-  }
-  return rangeArray
-}
-
-function robotExcessive(userInput, userName) {
-  var numberUserInput = parseInt(userInput);
-
-  var rangeArray = [];
-
-  for (var i = 50; i <= numberUserInput; i++) {
-
   //Condition for 3's
       if (String(i).includes("3")){
       rangeArray.push(" I'm sorry, " + userName + ". I'm afraid I can't do that.");
@@ -85,8 +59,37 @@ function robotExcessive(userInput, userName) {
         rangeArray.push(" " + i);
       }
     }
-    return rangeArray
   }
+  return rangeArray
+}
+
+//Function for inputs over 50
+function robotExcessive(userInput, userName) {
+  var numberUserInput = parseInt(userInput);
+
+  var rangeArray = [];
+
+  for (var i = 50; i <= numberUserInput; i++) {
+
+//Condition for 3's
+    if (String(i).includes("3")){
+    rangeArray.push(" I'm sorry, " + userName + ". I'm afraid I can't do that.");
+
+//Condition for 2's
+    } else if (String(i).includes("2")){
+      rangeArray.push(" BOOP");
+
+//Condition for 2's
+    } else if (String(i).includes("1")){
+      rangeArray.push(" BEEP");
+
+//Condition for numbers w/o 1,2 or 3
+    } else {
+      rangeArray.push(" " + i);
+    }
+  }
+  return rangeArray
+}
 
 
 //FRONTEND
