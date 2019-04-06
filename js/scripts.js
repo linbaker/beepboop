@@ -69,6 +69,17 @@ function robotExcessive(userInput, userName) {
 
   var rangeArray = [];
 
+//If number input is left blank
+  if (userInput === "") {
+    return "You can't fool me, human, enter a number!";
+  }
+
+
+//If name input is left blank
+  if (userName === "") {
+    userName = "Dave";
+  }
+
   for (var i = 50; i <= numberUserInput; i++) {
 
 //Condition for 3's
